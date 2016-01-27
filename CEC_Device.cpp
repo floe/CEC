@@ -27,9 +27,9 @@ void CEC_Device::OnReceive(int source, int dest, unsigned char* buffer, int coun
   // This is called when a frame is received.  To transmit
   // a frame call TransmitFrame.  To receive all frames, even
   // those not addressed to this device, set Promiscuous to true.
-  DbgPrint("Packet received at %ld: %d -> %d\n", millis(), source, dest);
+  DbgPrint("Packet received at %ld: %02d -> %02d: %02X", millis(), source, dest, ((source&0x0f)<<4)|(dest&0x0f));
   for (int i = 0; i < count; i++)
-    DbgPrint("%02X ", buffer[i]);
+    DbgPrint(":%02X", buffer[i]);
   DbgPrint("\n");
 }
 
