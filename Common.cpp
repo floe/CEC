@@ -33,7 +33,7 @@ void DbgPrint(const char* fmt, ...)
 #include <stdlib.h>
 #include <string.h>
 #include <util/delay.h>
-#include <WProgram.h>
+#include <Arduino.h>
 
 void* operator new(size_t size) { return malloc(size); }
 void operator delete(void* ptr) { free(ptr); }
