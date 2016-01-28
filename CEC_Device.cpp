@@ -1,13 +1,18 @@
 #include "CEC_Device.h"
+#include <Arduino.h>
 
-bool XX_GetLineState();
-void XX_SetLineState(CEC_Device* device, bool state);
-
-CEC_Device::CEC_Device(int physicalAddress)
+CEC_Device::CEC_Device(int physicalAddress, int in_line, int out_line)
 : CEC_LogicalDevice(physicalAddress)
 , _isrTriggered(false)
 , _lastLineState2(true)
+, _in_line(in_line)
+, _out_line(out_line)
 {
+  pinMode(_out_line, OUTPUT);
+  pinMode( _in_line,  INPUT);
+
+  digitalWrite(_out_line, LOW);
+  delay(200);
 }
 
 CEC_Device::~CEC_Device()
@@ -21,7 +26,6 @@ void CEC_Device::OnReady()
   DbgPrint("Device ready\n");
 }
 
-extern "C" unsigned long millis();
 void CEC_Device::OnReceive(int source, int dest, unsigned char* buffer, int count)
 {
   // This is called when a frame is received.  To transmit
@@ -35,12 +39,17 @@ void CEC_Device::OnReceive(int source, int dest, unsigned char* buffer, int coun
 
 bool CEC_Device::LineState()
 {
-  return XX_GetLineState();
+  int state = digitalRead(_in_line);
+  return state == LOW;
 }
 
 void CEC_Device::SetLineState(bool state)
 {
-  XX_SetLineState(this, state);
+  digitalWrite(_out_line, state?LOW:HIGH);
+  // give enough time for the line to settle before sampling
+  // it
+  delayMicroseconds(50);
+  _lastLineState2 = LineState();
 }
 
 void CEC_Device::SignalIRQ()
@@ -61,7 +70,7 @@ bool CEC_Device::IsISRTriggered()
 
 void CEC_Device::Run()
 {
-  bool state = XX_GetLineState();
+  bool state = LineState();
   if (_lastLineState2 != state)
   {
     _lastLineState2 = state;

@@ -6,7 +6,7 @@
 class CEC_Device : public CEC_LogicalDevice
 {
 public:
-  CEC_Device(int physicalAddress);
+  CEC_Device(int physicalAddress, int in_line, int out_line);
   virtual ~CEC_Device();
   
   virtual void Run();
@@ -22,10 +22,9 @@ protected:
   virtual void OnReceive(int source, int dest, unsigned char* buffer, int count);
   
 private:
-friend void XX_SetLineState(CEC_Device* device, bool state);
-friend bool XX_GetLineState();
   bool _isrTriggered;
   bool _lastLineState2;
+  int  _in_line, _out_line;
 };
 
 #endif // CEC_DEVICE_H__
