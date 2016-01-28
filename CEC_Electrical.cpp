@@ -1,4 +1,4 @@
-#include "CECWire.h"
+#include "CEC_Electrical.h"
 
 CEC_Electrical::CEC_Electrical(int address)
 {
@@ -566,6 +566,7 @@ unsigned long CEC_Electrical::Process()
 				if (RemainingTransmitBytes() == 0 &&  TransmitSize() == 1)
 				{
 					ResetState();
+					DbgPrint("Transmit failed, no acknowledge.\n");
 					OnTransmitComplete(false);
 				}
 				else
@@ -626,6 +627,7 @@ void CEC_Electrical::ResetTransmit(bool retransmit)
 		{
 			// No more
 			ResetState();
+			DbgPrint("Transmit failed, max retries reached.\n");
 			OnTransmitComplete(false);
 		}
 		else

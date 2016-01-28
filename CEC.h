@@ -1,7 +1,7 @@
 #ifndef CEC_H__
 #define CEC_H__
 
-#include "CECWire.h"
+#include "CEC_Electrical.h"
 
 class CEC_LogicalDevice : public CEC_Electrical
 {
