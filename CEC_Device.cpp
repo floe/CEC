@@ -15,10 +15,6 @@ CEC_Device::CEC_Device(int physicalAddress, int in_line, int out_line)
   delay(200);
 }
 
-CEC_Device::~CEC_Device()
-{
-}
-
 void CEC_Device::OnReady()
 {
   // This is called after the logical address has been
