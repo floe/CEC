@@ -8,6 +8,7 @@ class CEC_Device : public CEC_LogicalDevice
 public:
   CEC_Device(int physicalAddress, int in_line, int out_line);
   
+  void Init();
   virtual void Run();
   
 protected:

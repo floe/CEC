@@ -35,16 +35,6 @@ void DbgPrint(const char* fmt, ...)
 #include <util/delay.h>
 #include <Arduino.h>
 
-void* operator new(size_t size) { return malloc(size); }
-void operator delete(void* ptr) { free(ptr); }
-
-
-extern "C" 
-void __cxa_pure_virtual(void)
-{
-  while(1);
-}
-
 void DbgPrint(const char* fmt, ...)
 {
         char FormatBuffer[128]; 

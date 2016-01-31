@@ -8,6 +8,10 @@ CEC_Device::CEC_Device(int physicalAddress, int in_line, int out_line)
 , _in_line(in_line)
 , _out_line(out_line)
 {
+}
+
+void CEC_Device::Init()
+{
   pinMode(_out_line, OUTPUT);
   pinMode( _in_line,  INPUT);
 
