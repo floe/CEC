@@ -10,13 +10,15 @@ CEC_Device::CEC_Device(int physicalAddress, int in_line, int out_line)
 {
 }
 
-void CEC_Device::Init()
+void CEC_Device::Initialize(CEC_DEVICE_TYPE type)
 {
   pinMode(_out_line, OUTPUT);
   pinMode( _in_line,  INPUT);
 
   digitalWrite(_out_line, LOW);
   delay(200);
+
+  CEC_LogicalDevice::Initialize(type);
 }
 
 void CEC_Device::OnReady()
