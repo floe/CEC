@@ -1,0 +1,190 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASSERT	Common.h	14;"	d
+ASSERT	Common.h	9;"	d
+CDT_AUDIO_SYSTEM	CEC.h	/^		CDT_AUDIO_SYSTEM,$/;"	e	enum:CEC_LogicalDevice::__anon1
+CDT_OTHER	CEC.h	/^		CDT_OTHER,				\/\/ Not a real CEC type..$/;"	e	enum:CEC_LogicalDevice::__anon1
+CDT_PLAYBACK_DEVICE	CEC.h	/^		CDT_PLAYBACK_DEVICE,$/;"	e	enum:CEC_LogicalDevice::__anon1
+CDT_RECORDING_DEVICE	CEC.h	/^		CDT_RECORDING_DEVICE,$/;"	e	enum:CEC_LogicalDevice::__anon1
+CDT_TUNER	CEC.h	/^		CDT_TUNER,$/;"	e	enum:CEC_LogicalDevice::__anon1
+CDT_TV	CEC.h	/^		CDT_TV,$/;"	e	enum:CEC_LogicalDevice::__anon1
+CECWIRE_H__	CEC_Electrical.h	2;"	d
+CEC_ACK	CEC_Electrical.h	/^		CEC_ACK,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_ALLOCATE_LOGICAL_ADDRESS	CEC.h	/^		CEC_ALLOCATE_LOGICAL_ADDRESS,$/;"	e	enum:CEC_LogicalDevice::__anon3
+CEC_DEVICE_H__	CEC_Device.h	2;"	d
+CEC_DEVICE_TYPE	CEC.h	/^	} CEC_DEVICE_TYPE;$/;"	t	class:CEC_LogicalDevice	typeref:enum:CEC_LogicalDevice::__anon1
+CEC_Device	CEC_Device.cpp	/^CEC_Device::CEC_Device(int physicalAddress, int in_line, int out_line)$/;"	f	class:CEC_Device
+CEC_Device	CEC_Device.h	/^class CEC_Device : public CEC_LogicalDevice$/;"	c
+CEC_Electrical	CEC_Electrical.cpp	/^CEC_Electrical::CEC_Electrical(int address)$/;"	f	class:CEC_Electrical
+CEC_Electrical	CEC_Electrical.h	/^class CEC_Electrical : public SerialLine$/;"	c
+CEC_H__	CEC.h	2;"	d
+CEC_IDLE	CEC.h	/^		CEC_IDLE,$/;"	e	enum:CEC_LogicalDevice::__anon3
+CEC_IDLE	CEC_Electrical.h	/^		CEC_IDLE,$/;"	e	enum:CEC_Electrical::__anon6
+CEC_IDLE_NEW_FRAME	CEC_Electrical.h	/^		CEC_IDLE_NEW_FRAME,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_IDLE_RETRANSMIT_FRAME	CEC_Electrical.h	/^		CEC_IDLE_RETRANSMIT_FRAME,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_IDLE_SUBSEQUENT_FRAME	CEC_Electrical.h	/^		CEC_IDLE_SUBSEQUENT_FRAME,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_IDLE_WAIT	CEC_Electrical.h	/^		CEC_IDLE_WAIT,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_LOGICAL_ADDRESS	CEC.h	/^	} CEC_LOGICAL_ADDRESS;$/;"	t	class:CEC_LogicalDevice	typeref:enum:CEC_LogicalDevice::__anon2
+CEC_LogicalDevice	CEC.cpp	/^CEC_LogicalDevice::CEC_LogicalDevice(int physicalAddress)$/;"	f	class:CEC_LogicalDevice
+CEC_LogicalDevice	CEC.h	/^class CEC_LogicalDevice : public CEC_Electrical$/;"	c
+CEC_MAX_RETRANSMIT	CEC_Electrical.h	6;"	d
+CEC_NAK	CEC_Electrical.h	/^		CEC_NAK,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_PRIMARY_STATE	CEC.h	/^	} CEC_PRIMARY_STATE;$/;"	t	class:CEC_LogicalDevice	typeref:enum:CEC_LogicalDevice::__anon3
+CEC_PRIMARY_STATE	CEC_Electrical.h	/^	} CEC_PRIMARY_STATE;$/;"	t	class:CEC_Electrical	typeref:enum:CEC_Electrical::__anon6
+CEC_RCV_ACK1	CEC_Electrical.h	/^		CEC_RCV_ACK1,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_RCV_ACK2	CEC_Electrical.h	/^		CEC_RCV_ACK2,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_RCV_ACK_SENT	CEC_Electrical.h	/^		CEC_RCV_ACK_SENT,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_RCV_BIT0	CEC_Electrical.h	/^		CEC_RCV_BIT0,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_BIT1	CEC_Electrical.h	/^		CEC_RCV_BIT1,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_BIT2	CEC_Electrical.h	/^		CEC_RCV_BIT2,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_BIT3	CEC_Electrical.h	/^		CEC_RCV_BIT3,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_BIT4	CEC_Electrical.h	/^		CEC_RCV_BIT4,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_BIT5	CEC_Electrical.h	/^		CEC_RCV_BIT5,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_BIT6	CEC_Electrical.h	/^		CEC_RCV_BIT6,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_BIT7	CEC_Electrical.h	/^		CEC_RCV_BIT7,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_BIT_ACK	CEC_Electrical.h	/^		CEC_RCV_BIT_ACK,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_BIT_EOM	CEC_Electrical.h	/^		CEC_RCV_BIT_EOM,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_RCV_DATABIT1	CEC_Electrical.h	/^		CEC_RCV_DATABIT1,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_RCV_DATABIT2	CEC_Electrical.h	/^		CEC_RCV_DATABIT2,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_RCV_LINEERROR	CEC_Electrical.h	/^		CEC_RCV_LINEERROR,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_RCV_POLLING_MESSAGE	CEC.h	/^		CEC_RCV_POLLING_MESSAGE,$/;"	e	enum:CEC_LogicalDevice::__anon4
+CEC_RCV_STARTBIT1	CEC_Electrical.h	/^		CEC_RCV_STARTBIT1,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_RCV_STARTBIT2	CEC_Electrical.h	/^		CEC_RCV_STARTBIT2,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_READY	CEC.h	/^		CEC_READY,$/;"	e	enum:CEC_LogicalDevice::__anon3
+CEC_RECEIVE	CEC_Electrical.h	/^		CEC_RECEIVE,$/;"	e	enum:CEC_Electrical::__anon6
+CEC_SECONDARY_STATE	CEC.h	/^	} CEC_SECONDARY_STATE;$/;"	t	class:CEC_LogicalDevice	typeref:enum:CEC_LogicalDevice::__anon4
+CEC_SECONDARY_STATE	CEC_Electrical.h	/^	} CEC_SECONDARY_STATE;$/;"	t	class:CEC_Electrical	typeref:enum:CEC_Electrical::__anon7
+CEC_TERTIARY_STATE	CEC.h	/^	} CEC_TERTIARY_STATE;$/;"	t	class:CEC_LogicalDevice	typeref:enum:CEC_LogicalDevice::__anon5
+CEC_TERTIARY_STATE	CEC_Electrical.h	/^	} CEC_TERTIARY_STATE;$/;"	t	class:CEC_Electrical	typeref:enum:CEC_Electrical::__anon8
+CEC_TRANSMIT	CEC_Electrical.h	/^		CEC_TRANSMIT,$/;"	e	enum:CEC_Electrical::__anon6
+CEC_XMIT_ACK	CEC_Electrical.h	/^		CEC_XMIT_ACK,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_XMIT_ACK2	CEC_Electrical.h	/^		CEC_XMIT_ACK2,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_XMIT_ACK3	CEC_Electrical.h	/^		CEC_XMIT_ACK3,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_XMIT_ACK_TEST	CEC_Electrical.h	/^		CEC_XMIT_ACK_TEST,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_XMIT_BIT0	CEC_Electrical.h	/^		CEC_XMIT_BIT0,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_BIT1	CEC_Electrical.h	/^		CEC_XMIT_BIT1,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_BIT2	CEC_Electrical.h	/^		CEC_XMIT_BIT2,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_BIT3	CEC_Electrical.h	/^		CEC_XMIT_BIT3,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_BIT4	CEC_Electrical.h	/^		CEC_XMIT_BIT4,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_BIT5	CEC_Electrical.h	/^		CEC_XMIT_BIT5,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_BIT6	CEC_Electrical.h	/^		CEC_XMIT_BIT6,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_BIT7	CEC_Electrical.h	/^		CEC_XMIT_BIT7,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_BIT_ACK	CEC_Electrical.h	/^		CEC_XMIT_BIT_ACK,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_BIT_EOM	CEC_Electrical.h	/^		CEC_XMIT_BIT_EOM,$/;"	e	enum:CEC_Electrical::__anon8
+CEC_XMIT_DATABIT1	CEC_Electrical.h	/^		CEC_XMIT_DATABIT1,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_XMIT_DATABIT2	CEC_Electrical.h	/^		CEC_XMIT_DATABIT2,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_XMIT_POLLING_MESSAGE	CEC.h	/^		CEC_XMIT_POLLING_MESSAGE,$/;"	e	enum:CEC_LogicalDevice::__anon4
+CEC_XMIT_STARTBIT1	CEC_Electrical.h	/^		CEC_XMIT_STARTBIT1,$/;"	e	enum:CEC_Electrical::__anon7
+CEC_XMIT_STARTBIT2	CEC_Electrical.h	/^		CEC_XMIT_STARTBIT2,$/;"	e	enum:CEC_Electrical::__anon7
+CLA_AUDIO_SYSTEM	CEC.h	/^		CLA_AUDIO_SYSTEM,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_FREE_USE	CEC.h	/^		CLA_FREE_USE,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_PLAYBACK_DEVICE_1	CEC.h	/^		CLA_PLAYBACK_DEVICE_1,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_PLAYBACK_DEVICE_2	CEC.h	/^		CLA_PLAYBACK_DEVICE_2,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_PLAYBACK_DEVICE_3	CEC.h	/^		CLA_PLAYBACK_DEVICE_3,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_RECORDING_DEVICE_1	CEC.h	/^		CLA_RECORDING_DEVICE_1,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_RECORDING_DEVICE_2	CEC.h	/^		CLA_RECORDING_DEVICE_2,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_RECORDING_DEVICE_3	CEC.h	/^		CLA_RECORDING_DEVICE_3,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_RESERVED_1	CEC.h	/^		CLA_RESERVED_1,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_RESERVED_2	CEC.h	/^		CLA_RESERVED_2,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_TUNER_1	CEC.h	/^		CLA_TUNER_1,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_TUNER_2	CEC.h	/^		CLA_TUNER_2,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_TUNER_3	CEC.h	/^		CLA_TUNER_3,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_TUNER_4	CEC.h	/^		CLA_TUNER_4,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_TV	CEC.h	/^		CLA_TV = 0,$/;"	e	enum:CEC_LogicalDevice::__anon2
+CLA_UNREGISTERED	CEC.h	/^		CLA_UNREGISTERED,$/;"	e	enum:CEC_LogicalDevice::__anon2
+COMMON_H__	Common.h	2;"	d
+CheckAddress	CEC_Electrical.cpp	/^bool CEC_Electrical::CheckAddress()$/;"	f	class:CEC_Electrical
+ClearTransmitBuffer	Serial.cpp	/^void SerialLine::ClearTransmitBuffer()$/;"	f	class:SerialLine
+CriticalSection	Common.cpp	/^static CRITICAL_SECTION CriticalSection;$/;"	v	file:
+CriticalSectionInitialized	Common.cpp	/^static bool CriticalSectionInitialized = false;$/;"	v	file:
+DbgPrint	Common.cpp	/^void DbgPrint(const char* fmt, ...)$/;"	f
+FormatBuffer	Common.cpp	/^static char FormatBuffer[4096]; $/;"	v	file:
+HasLowered	CEC_Electrical.cpp	/^void CEC_Electrical::HasLowered(unsigned long time)$/;"	f	class:CEC_Electrical
+HasRaised	CEC_Electrical.cpp	/^void CEC_Electrical::HasRaised(unsigned long time)$/;"	f	class:CEC_Electrical
+Initialize	CEC.cpp	/^void CEC_LogicalDevice::Initialize(CEC_DEVICE_TYPE type)$/;"	f	class:CEC_LogicalDevice
+Initialize	CEC_Device.cpp	/^void CEC_Device::Initialize(CEC_DEVICE_TYPE type)$/;"	f	class:CEC_Device
+Initialize	CEC_Electrical.cpp	/^void CEC_Electrical::Initialize()$/;"	f	class:CEC_Electrical
+IsISRTriggered	CEC_Device.cpp	/^bool CEC_Device::IsISRTriggered()$/;"	f	class:CEC_Device
+IsISRTriggered2	CEC_Device.h	/^  virtual bool IsISRTriggered2() { return _isrTriggered; }$/;"	f	class:CEC_Device
+LineError	CEC_Electrical.cpp	/^unsigned long CEC_Electrical::LineError()$/;"	f	class:CEC_Electrical
+LineState	CEC_Device.cpp	/^bool CEC_Device::LineState()$/;"	f	class:CEC_Device
+Lower	CEC_Electrical.cpp	/^bool CEC_Electrical::Lower()$/;"	f	class:CEC_Electrical
+MAKE_ADDRESS	CEC.cpp	12;"	d	file:
+MonitorMode	CEC_Electrical.h	/^	int MonitorMode;$/;"	m	class:CEC_Electrical
+NULL	Common.h	16;"	d
+OnReady	CEC.h	/^	virtual void OnReady() {;}$/;"	f	class:CEC_LogicalDevice
+OnReady	CEC_Device.cpp	/^void CEC_Device::OnReady()$/;"	f	class:CEC_Device
+OnReceive	CEC_Device.cpp	/^void CEC_Device::OnReceive(int source, int dest, unsigned char* buffer, int count)$/;"	f	class:CEC_Device
+OnReceiveComplete	CEC.cpp	/^void CEC_LogicalDevice::OnReceiveComplete(unsigned char* buffer, int count)$/;"	f	class:CEC_LogicalDevice
+OnReceiveComplete	Serial.cpp	/^void SerialLine::OnReceiveComplete(unsigned char* buffer, int count)$/;"	f	class:SerialLine
+OnTransmitBegin	CEC_Electrical.cpp	/^void CEC_Electrical::OnTransmitBegin()$/;"	f	class:CEC_Electrical
+OnTransmitBegin	Serial.h	/^	virtual void OnTransmitBegin() {;}$/;"	f	class:SerialLine
+OnTransmitComplete	CEC.cpp	/^void CEC_LogicalDevice::OnTransmitComplete(bool success)$/;"	f	class:CEC_LogicalDevice
+OnTransmitComplete	CEC_Electrical.cpp	/^void CEC_Electrical::OnTransmitComplete(bool success)$/;"	f	class:CEC_Electrical
+PopTransmitBit	Serial.cpp	/^int SerialLine::PopTransmitBit()$/;"	f	class:SerialLine
+Process	CEC_Electrical.cpp	/^unsigned long CEC_Electrical::Process()$/;"	f	class:CEC_Electrical
+ProcessFrame	CEC_Electrical.cpp	/^void CEC_Electrical::ProcessFrame()$/;"	f	class:CEC_Electrical
+ProcessStateMachine	CEC.cpp	/^bool CEC_LogicalDevice::ProcessStateMachine(bool* success)$/;"	f	class:CEC_LogicalDevice
+Promiscuous	CEC_Electrical.h	/^	int Promiscuous;$/;"	m	class:CEC_Electrical
+PushReceiveBit	Serial.cpp	/^void SerialLine::PushReceiveBit(int bit)$/;"	f	class:SerialLine
+Raise	CEC_Electrical.cpp	/^bool CEC_Electrical::Raise()$/;"	f	class:CEC_Electrical
+ReceivedBit	CEC_Electrical.cpp	/^void CEC_Electrical::ReceivedBit(bool state)$/;"	f	class:CEC_Electrical
+ReceivedBytes	Serial.cpp	/^int SerialLine::ReceivedBytes()$/;"	f	class:SerialLine
+RemainingTransmitBytes	Serial.cpp	/^int SerialLine::RemainingTransmitBytes()$/;"	f	class:SerialLine
+ResetReceiveBuffer	Serial.cpp	/^void SerialLine::ResetReceiveBuffer()$/;"	f	class:SerialLine
+ResetState	CEC_Electrical.cpp	/^bool CEC_Electrical::ResetState()$/;"	f	class:CEC_Electrical
+ResetTransmit	CEC_Electrical.cpp	/^void CEC_Electrical::ResetTransmit(bool retransmit)$/;"	f	class:CEC_Electrical
+ResetTransmitBuffer	Serial.cpp	/^void SerialLine::ResetTransmitBuffer()$/;"	f	class:SerialLine
+Run	CEC.cpp	/^void CEC_LogicalDevice::Run()$/;"	f	class:CEC_LogicalDevice
+Run	CEC_Device.cpp	/^void CEC_Device::Run()$/;"	f	class:CEC_Device
+SERIAL_BUFFER_SIZE	Serial.h	6;"	d
+SERIAL_H__	Serial.h	2;"	d
+SerialLine	Serial.cpp	/^SerialLine::SerialLine()$/;"	f	class:SerialLine
+SerialLine	Serial.h	/^class SerialLine$/;"	c
+SetAddress	CEC_Electrical.cpp	/^void CEC_Electrical::SetAddress(int address)$/;"	f	class:CEC_Electrical
+SetLineState	CEC_Device.cpp	/^void CEC_Device::SetLineState(bool state)$/;"	f	class:CEC_Device
+SignalIRQ	CEC_Device.cpp	/^void CEC_Device::SignalIRQ()$/;"	f	class:CEC_Device
+Transmit	Serial.cpp	/^bool SerialLine::Transmit(unsigned char* buffer, int count)$/;"	f	class:SerialLine
+TransmitFrame	CEC.cpp	/^bool CEC_LogicalDevice::TransmitFrame(int targetAddress, unsigned char* buffer, int count)$/;"	f	class:CEC_LogicalDevice
+TransmitPartial	Serial.cpp	/^bool SerialLine::TransmitPartial(unsigned char* buffer, int count)$/;"	f	class:SerialLine
+TransmitPending	CEC_Electrical.h	/^	bool TransmitPending() { return _primaryState == CEC_TRANSMIT && _secondaryState == CEC_IDLE_WAIT; }$/;"	f	class:CEC_Electrical
+TransmitSize	Serial.cpp	/^int SerialLine::TransmitSize()$/;"	f	class:SerialLine
+_address	CEC_Electrical.h	/^	int _address;$/;"	m	class:CEC_Electrical
+_amLastTransmittor	CEC_Electrical.h	/^	bool _amLastTransmittor;$/;"	m	class:CEC_Electrical
+_bitStartTime	CEC_Electrical.h	/^	unsigned long _bitStartTime;$/;"	m	class:CEC_Electrical
+_broadcast	CEC_Electrical.h	/^	bool _broadcast;$/;"	m	class:CEC_Electrical
+_deviceType	CEC.h	/^	CEC_DEVICE_TYPE _deviceType;$/;"	m	class:CEC_LogicalDevice
+_done	CEC.h	/^	bool _done;$/;"	m	class:CEC_LogicalDevice
+_eom	CEC_Electrical.h	/^	bool _eom;$/;"	m	class:CEC_Electrical
+_follower	CEC_Electrical.h	/^	bool _follower;$/;"	m	class:CEC_Electrical
+_in_line	CEC_Device.h	/^  int  _in_line, _out_line;$/;"	m	class:CEC_Device
+_isrTriggered	CEC_Device.h	/^  bool _isrTriggered;$/;"	m	class:CEC_Device
+_lastLineState	CEC_Electrical.h	/^	bool _lastLineState;$/;"	m	class:CEC_Electrical
+_lastLineState2	CEC_Device.h	/^  bool _lastLineState2;$/;"	m	class:CEC_Device
+_lastStateChangeTime	CEC_Electrical.h	/^	unsigned long _lastStateChangeTime;$/;"	m	class:CEC_Electrical
+_logicalAddress	CEC.h	/^	int _logicalAddress;$/;"	m	class:CEC_LogicalDevice
+_out_line	CEC_Device.h	/^  int  _in_line, _out_line;$/;"	m	class:CEC_Device
+_physicalAddress	CEC.h	/^	int _physicalAddress;$/;"	m	class:CEC_LogicalDevice
+_primaryState	CEC.h	/^	CEC_PRIMARY_STATE _primaryState;$/;"	m	class:CEC_LogicalDevice
+_primaryState	CEC_Electrical.h	/^	CEC_PRIMARY_STATE _primaryState;$/;"	m	class:CEC_Electrical
+_receiveBuffer	Serial.h	/^	unsigned char _receiveBuffer[SERIAL_BUFFER_SIZE];$/;"	m	class:SerialLine
+_receiveBufferBit	Serial.h	/^	int _receiveBufferBit;$/;"	m	class:SerialLine
+_receiveBufferByte	Serial.h	/^	int _receiveBufferByte;$/;"	m	class:SerialLine
+_receiveBufferCount	Serial.h	/^	int _receiveBufferCount;$/;"	m	class:SerialLine
+_secondaryState	CEC.h	/^	CEC_SECONDARY_STATE _secondaryState;$/;"	m	class:CEC_LogicalDevice
+_secondaryState	CEC_Electrical.h	/^	CEC_SECONDARY_STATE _secondaryState;$/;"	m	class:CEC_Electrical
+_tertiaryState	CEC.h	/^	int _tertiaryState;$/;"	m	class:CEC_LogicalDevice
+_tertiaryState	CEC_Electrical.h	/^	CEC_TERTIARY_STATE _tertiaryState;$/;"	m	class:CEC_Electrical
+_transmitBuffer	Serial.h	/^	unsigned char _transmitBuffer[SERIAL_BUFFER_SIZE];$/;"	m	class:SerialLine
+_transmitBufferBit	Serial.h	/^	int _transmitBufferBit;$/;"	m	class:SerialLine
+_transmitBufferByte	Serial.h	/^	int _transmitBufferByte;$/;"	m	class:SerialLine
+_transmitBufferCount	Serial.h	/^	int _transmitBufferCount;$/;"	m	class:SerialLine
+_transmitPending	CEC_Electrical.h	/^	bool _transmitPending;$/;"	m	class:CEC_Electrical
+_validLogicalAddresses	CEC.cpp	/^int CEC_LogicalDevice::_validLogicalAddresses[6][5] = $/;"	m	class:CEC_LogicalDevice	file:
+_validLogicalAddresses	CEC.h	/^	static int _validLogicalAddresses[6][5];$/;"	m	class:CEC_LogicalDevice
+_waitTime	CEC.h	/^	unsigned long _waitTime;$/;"	m	class:CEC_LogicalDevice
+_xmitretry	CEC_Electrical.h	/^	int _xmitretry;$/;"	m	class:CEC_Electrical
