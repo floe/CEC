@@ -1,9 +1,10 @@
 #include "CEC_Device.h"
 
-// TODO: control the hot-plug detect pin (19) via software?
 #define IN_LINE 2
 #define OUT_LINE 3
+#define HPD_LINE 10
 
+// ugly macro to do debug printing in the OnReceive method
 #define report(X) do { DbgPrint("report " #X "\n"); report ## X (); } while (0)
 
 #define phy1 ((_physicalAddress >> 8) & 0xFF)
@@ -62,12 +63,21 @@ class MyCEC: public CEC_Device {
 };
 
 // TODO: set physical address via serial (or even DDC?)
+
+// Note: this does not need to correspond to the physical address (i.e. port number)
+// where the Arduino is connected - in fact, it _should_ be a different port, namely
+// the one where the PC to be controlled is connected. Basically, it is the address
+// of the port where the CEC-less source device is plugged in.
 MyCEC device(0x1000);
 
 void setup()
 {
+  // setup Hotplug pin
+  pinMode(HPD_LINE,INPUT);
+  
   Serial.begin(115200);
   Keyboard.begin();
+  
   //device.MonitorMode = true;
   //device.Promiscuous = true;
   device.Initialize(CEC_LogicalDevice::CDT_PLAYBACK_DEVICE);
@@ -80,7 +90,8 @@ void loop()
   if (Serial.available())
   {
     unsigned char c = Serial.read();
-    unsigned char buffer[3];
+    unsigned char buffer[2] = { c, 0 };
+    Serial.print("Command: "); Serial.println((const char*)buffer);
     
     switch (c)
     {
@@ -92,6 +103,10 @@ void loop()
       case 'p':
         // toggle promiscuous mode
         device.Promiscuous = !(device.Promiscuous);
+        break;
+      case 'h':
+        // query Hotplug pin
+        Serial.print("Hotplug state: "); Serial.println(digitalRead(HPD_LINE));
         break;
     }
   }
